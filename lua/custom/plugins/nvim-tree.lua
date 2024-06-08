@@ -6,7 +6,8 @@ return {
     'nvim-tree/nvim-web-devicons',
   },
   keys = {
-    { '<leader>t', ':NvimTreeToggle<CR>', { desc = 'NvimTree toggle' } },
+    { '<leader>e', ':NvimTreeToggle<CR>', { desc = 'NvimTree toggle' } },
+    { '<leader>tt', ':NvimTreeFocus<CR>', { desc = 'NvimTree focus' } },
   },
   opts = {
     on_attach = function(bufnr)
