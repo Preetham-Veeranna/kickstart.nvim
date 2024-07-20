@@ -88,8 +88,8 @@ P.S. You can delete this when you're done too. It's your config now! :)
 -- See `:help mapleader`
 --  NOTE: Must happen before plugins are loaded (otherwise wrong leader will be used)
 -- disable netrw
-vim.g.loaded_netrw = 1
-vim.g.loaded_netrwPlugin = 1
+-- vim.g.loaded_netrw = 1
+-- vim.g.loaded_netrwPlugin = 1
 
 vim.g.mapleader = ' '
 vim.g.maplocalleader = ' '
@@ -176,7 +176,9 @@ vim.keymap.set('n', '<S-l>', ':bnext<CR>', { desc = 'next buffers' })
 vim.keymap.set('n', '<S-h>', ':bprevious<CR>', { desc = 'previous buffers' })
 vim.keymap.set('n', '<leader>bs', ':w!<cr>', { desc = 'save buffer' })
 vim.keymap.set('n', '<leader>bd', ':bdelete!<cr>', { desc = 'delete buffer' })
--- vim.keymap.set('n',
+
+-- window keymaps
+vim.keymap.set('n', '<leader>;', ':wq<cr>', { desc = 'quit' })
 
 -- Diagnostic keymaps
 vim.keymap.set('n', '[d', vim.diagnostic.goto_prev, { desc = 'Go to previous [D]iagnostic message' })

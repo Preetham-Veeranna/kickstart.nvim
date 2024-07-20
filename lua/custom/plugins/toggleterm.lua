@@ -2,9 +2,9 @@ return {
   'akinsho/toggleterm.nvim',
   version = '*',
   opts = {
-    vim.keymap.set('n', '<M-1>', ':ToggleTerm direction=horizontal<cr>', { desc = 'terminal horizontal' }),
-    vim.keymap.set('n', '<M-2>', ':ToggleTerm direction=vertical<cr>', { desc = 'terminal vertical' }),
-    vim.keymap.set('n', '<A-3>', ':ToggleTerm direction=float<cr>', { desc = 'terminal float' }),
+    vim.keymap.set('n', '<C-7>', ':ToggleTerm direction=horizontal<cr>', { desc = 'terminal horizontal' }),
+    vim.keymap.set('n', '<C-8>', ':ToggleTerm direction=vertical<cr>', { desc = 'terminal vertical' }),
+    vim.keymap.set('n', '<C-9>', ':ToggleTerm direction=float<cr>', { desc = 'terminal float' }),
     size = function(term)
       if term.direction == 'horizontal' then
         return 15
